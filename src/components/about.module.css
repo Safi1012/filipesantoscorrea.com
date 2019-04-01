@@ -1,9 +1,9 @@
 .headline {
-  font-size: 3.75rem;
+  font-size: 1.7rem;
   color: var(--primary-color);
 }
 
 .underline {
-  font-size: 2rem;
+  font-size: 1.125rem;
   color: var(--text-color);
 }

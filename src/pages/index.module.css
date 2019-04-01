@@ -1,0 +1,11 @@
+.outerContainer {
+  display: flex;
+  height: 100vh;
+  align-items: center;
+  justify-content: center;
+  margin-top: -2rem;
+}
+
+.container {
+  margin: 8px;
+}
