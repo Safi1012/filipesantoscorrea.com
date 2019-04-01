@@ -1,3 +1,8 @@
-import React from "react"
+import React from 'react'
+import About from '../components/about'
 
-export default () => <div>Hello world!</div>
+export default () => (
+  <div>
+    <About />
+  </div>
+)
