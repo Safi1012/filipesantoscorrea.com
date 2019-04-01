@@ -1,5 +1,3 @@
-@import url('../styles/variables.css');
-
 .headline {
   font-size: 3.75rem;
   color: var(--primary-color);
