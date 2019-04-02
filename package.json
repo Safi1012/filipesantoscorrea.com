@@ -17,7 +17,8 @@
     "gatsby-plugin-prefetch-google-fonts": "^1.4.1",
     "gatsby-plugin-react-svg": "^2.1.1",
     "react": "^16.8.6",
-    "react-dom": "^16.8.6"
+    "react-dom": "^16.8.6",
+    "react-particles-js": "^2.5.1"
   },
   "devDependencies": {
     "prettier": "^1.16.4"
