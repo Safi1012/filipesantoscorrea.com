@@ -1,9 +1,9 @@
 .particles {
+  height: 100vh;
   position: absolute;
-  bottom: 0;
+  top: 0;
   right: 0;
   left: 0;
-  top: 0;
 }
 
 .outerContainer {
@@ -11,16 +11,10 @@
   height: 100vh;
   align-items: center;
   justify-content: center;
-  margin-top: -2rem;
 }
 
 .container {
-  margin: 8px;
+  margin: 0 0.5em;
   z-index: 1;
-}
-
-@media (min-width: 576px) {
-  .outerContainer {
-    margin-top: -4rem;
-  }
+  padding-bottom: 5em;
 }
