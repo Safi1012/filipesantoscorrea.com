@@ -18,6 +18,19 @@ module.exports = {
           include: /assets/
         }
       }
-    }
+    },
+    {
+      resolve: `gatsby-plugin-manifest`,
+      options: {
+        name: `Filipe Santos Correa`,
+        short_name: `Filipe`,
+        start_url: `/`,
+        background_color: `#ffffff`,
+        theme_color: `#0873e8`,
+        display: `standalone`,
+        icon: `assets/appicon.png`,
+        include_favicon: true,
+      },
+    },
   ],
 }
