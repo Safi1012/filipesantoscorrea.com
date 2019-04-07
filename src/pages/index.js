@@ -18,6 +18,13 @@ export default () => (
       <meta name="title" content="Filipe Santos Correa - Front-End Engineer" />
       <meta name="description" content="Hi, my name is Filipe Santos Correa. I'm a Front-End Engineer from Karlsruhe - Germany." />
       <link rel="canonical" href="https://filipesantoscorrea.com" />
+
+      <meta name="application-name" content="Filipe Santos Correa" />
+      <meta name="theme-color" content="#48bfcd" />
+      <meta name="apple-mobile-web-app-title" content="Filipe Santos Correa" />
+      <meta name="apple-mobile-web-app-capable" content="yes" />
+      <meta name="apple-mobile-web-app-status-bar-style" content="default" />
+      <meta name="mobile-web-app-capable" content="yes" />
     </Helmet>
 
     <Particles className={styles.particles} params={particleOptions} />
