@@ -32,6 +32,7 @@ module.exports = {
         include_favicon: true,
       },
     },
-    'gatsby-plugin-offline'
+    `gatsby-plugin-react-helmet`,
+    `gatsby-plugin-offline`
   ],
 }
