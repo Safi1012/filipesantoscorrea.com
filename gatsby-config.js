@@ -1,4 +1,7 @@
 module.exports = {
+  siteMetadata: {
+    siteUrl: `https://filipesantoscorrea.com`,
+  },
   plugins: [
     {
       resolve: `gatsby-plugin-prefetch-google-fonts`,
@@ -31,6 +34,29 @@ module.exports = {
         icon: `assets/appicon.png`,
         include_favicon: true,
       },
+    },
+    {
+      resolve: `gatsby-plugin-sitemap`,
+      options: {
+        output: `/sitemap.xml`,
+        exclude: ["/privacy", `/legal`],
+        query: `
+          {
+            site {
+              siteMetadata {
+                siteUrl
+              }
+            }
+  
+            allSitePage {
+              edges {
+                node {
+                  path
+                }
+              }
+            }
+        }`
+      }
     },
     `gatsby-plugin-react-helmet`,
     `gatsby-plugin-offline`
