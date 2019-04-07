@@ -67,6 +67,14 @@ module.exports = {
         respectDNT: true
       },
     },
+    {
+      resolve: 'gatsby-plugin-robots-txt',
+      options: {
+        host: 'https://filipesantoscorrea.com',
+        sitemap: 'https://filipesantoscorrea.com/sitemap.xml',
+        policy: [{ userAgent: '*', allow: '/', disallow: ["/privacy", "/legal"], }]
+      }
+    },
     `gatsby-plugin-react-helmet`,
     `gatsby-plugin-offline`
   ],
