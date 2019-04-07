@@ -22,7 +22,7 @@ export default () => (
       <LinkedIn alt="LinkedIn icon" />
     </OutboundLink>
     
-    <OutboundLink href="mailto:mail@filipesantoscorrea.com" rel="noopener noreferrer" target="_blank" aria-label="Link to my email address">
+    <OutboundLink href="mailto:mail@filipesantoscorrea.com" rel="noopener noreferrer" aria-label="Link to my email address">
       <Mail alt="Mail icon" />
     </OutboundLink>
     
