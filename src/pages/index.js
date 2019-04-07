@@ -21,8 +21,8 @@ export default () => (
     </Helmet>
 
     <Particles className={styles.particles} params={particleOptions} />
+    
     <div className={styles.outerContainer}>
-      
       <div className={styles.container}>
         <About />
         <Links />

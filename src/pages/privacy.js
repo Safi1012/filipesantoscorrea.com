@@ -148,7 +148,8 @@ export default () => (
             in addition with further information. This add-on can be installed on the most popular browsers and offers you further control over the data that 
             Google collects when you visit our website. The add-on informs Google Analytics' JavaScript (ga.js) that no information about the website 
             visit should be transmitted to Google Analytics. However, this does not prevent information from being transmitted to us or to other 
-            web analytics services we may use as detailed herein.
+            web analytics services we may use as detailed herein. You can also opt out by clicking on the next link&nbsp;
+            <a href="/privacy" onClick={e => {e.preventDefault(); window.gaOptout(); console.log('Opt Out successfully');}}>Deactivate Google Analytics</a>.
           </p>
 
 
