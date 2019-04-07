@@ -8,7 +8,7 @@
 
 Welcome to my About Me / Portfolio repository!
 
-<hr/>
+<br/>
 
 ## 🎢 Tech Stack
 
@@ -16,7 +16,7 @@ Welcome to my About Me / Portfolio repository!
 - [React](https://reactjs.org)
 - [Firebase Hosting](https://firebase.google.com)
 
-<hr/>
+<br/>
 
 ## 🚀 Getting started
 
