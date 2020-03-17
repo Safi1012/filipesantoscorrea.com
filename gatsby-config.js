@@ -1,6 +1,6 @@
 module.exports = {
   siteMetadata: {
-    siteUrl: `https://filipesantoscorrea.com`,
+    siteUrl: `http://hamed.es`,
   },
   plugins: [
     {
@@ -25,8 +25,8 @@ module.exports = {
     {
       resolve: `gatsby-plugin-manifest`,
       options: {
-        name: `Filipe Santos Correa`,
-        short_name: `Filipe`,
+        name: `Hamed Esmaili`,
+        short_name: `Hamed`,
         start_url: `/`,
         background_color: `#ffffff`,
         theme_color: `#0873e8`,
@@ -39,7 +39,6 @@ module.exports = {
       resolve: `gatsby-plugin-sitemap`,
       options: {
         output: `/sitemap.xml`,
-        exclude: ["/privacy", `/legal`],
         query: `
           {
             site {
@@ -61,7 +60,7 @@ module.exports = {
     {
       resolve: `gatsby-plugin-google-analytics`,
       options: {
-        trackingId: "UA-137805599-1",
+        trackingId: "UA-161028857-1",
         head: true,
         anonymize: true,
         respectDNT: true
@@ -70,8 +69,8 @@ module.exports = {
     {
       resolve: 'gatsby-plugin-robots-txt',
       options: {
-        host: 'https://filipesantoscorrea.com',
-        sitemap: 'https://filipesantoscorrea.com/sitemap.xml',
+        host: 'http://hamed.es',
+        sitemap: 'http://hamed.es/sitemap.xml',
         policy: [{ userAgent: '*', allow: '/', disallow: ["/privacy", "/legal"], }]
       }
     },

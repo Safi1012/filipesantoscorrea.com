@@ -4,7 +4,6 @@ import { Helmet } from 'react-helmet';
 import styles from './index.module.css';
 import About from '../components/about';
 import Links from '../components/links';
-import Footer from '../components/footer';
 import particleOptions from '../../assets/particles.json';
 
 export default () => (
@@ -14,14 +13,14 @@ export default () => (
       <meta http-equiv="X-UA-Compatible" content="IE=edge" />
       <meta name="viewport" content="width=device-width,initial-scale=1.0" />
 
-      <title>Filipe Santos Correa - Front-End Engineer</title>
-      <meta name="title" content="Filipe Santos Correa - Front-End Engineer" />
-      <meta name="description" content="Hi, my name is Filipe Santos Correa. I'm a Front-End Engineer from Karlsruhe - Germany." />
+      <title>Hamed Esmaili - Front-End Engineer</title>
+      <meta name="title" content="Hamed Esmaili - Front-End Engineer" />
+      <meta name="description" content="Hi, my name is Hamed Esmaili. I'm a Front-End Engineer from Tehran - Iran." />
       <link rel="canonical" href="https://filipesantoscorrea.com" />
 
-      <meta name="application-name" content="Filipe Santos Correa" />
+      <meta name="application-name" content="Hamed Esmaili" />
       <meta name="theme-color" content="#48bfcd" />
-      <meta name="apple-mobile-web-app-title" content="Filipe Santos Correa" />
+      <meta name="apple-mobile-web-app-title" content="Hamed Esmaili" />
       <meta name="apple-mobile-web-app-capable" content="yes" />
       <meta name="apple-mobile-web-app-status-bar-style" content="default" />
       <meta name="mobile-web-app-capable" content="yes" />
@@ -35,6 +34,5 @@ export default () => (
         <Links />
       </div>
     </div>
-    <Footer />
   </>
 )
