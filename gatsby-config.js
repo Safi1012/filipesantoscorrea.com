@@ -11,6 +11,10 @@ module.exports = {
             family: `Open Sans`,
             variants: [`300`, `600`]
           },
+          {
+            family: `Lora`,
+            variants: [`700`]
+          }
         ],
       },
     },
@@ -29,7 +33,7 @@ module.exports = {
         short_name: `Hamed`,
         start_url: `/`,
         background_color: `#ffffff`,
-        theme_color: `#0873e8`,
+        theme_color: `#3498db`,
         display: `standalone`,
         icon: `assets/appicon.png`,
         include_favicon: true,

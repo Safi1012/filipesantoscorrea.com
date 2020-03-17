@@ -1,7 +1,8 @@
 .headline {
+  font-family: 'Lora', sans-serif;;
   font-size: 1.7rem;
   color: var(--primary-color);
-  font-weight: 300;
+  font-weight: 700;
 }
 
 .underline {
