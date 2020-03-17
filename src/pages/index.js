@@ -13,13 +13,13 @@ export default () => (
       <meta http-equiv="X-UA-Compatible" content="IE=edge" />
       <meta name="viewport" content="width=device-width,initial-scale=1.0" />
 
-      <title>Hamed Esmaili - Front-End Engineer</title>
-      <meta name="title" content="Hamed Esmaili - Front-End Engineer" />
-      <meta name="description" content="Hi, my name is Hamed Esmaili. I'm a Front-End Engineer from Tehran - Iran." />
-      <link rel="canonical" href="https://filipesantoscorrea.com" />
+      <title>Hamed Esmaili - Software Engineer</title>
+      <meta name="title" content="Hamed Esmaili - Software Engineer" />
+      <meta name="description" content="Hi, my name is Hamed Esmaili. I'm a Software Engineer from Tehran - Iran." />
+      <link rel="canonical" href="https://hamed.es" />
 
       <meta name="application-name" content="Hamed Esmaili" />
-      <meta name="theme-color" content="#48bfcd" />
+      <meta name="theme-color" content="#3498db" />
       <meta name="apple-mobile-web-app-title" content="Hamed Esmaili" />
       <meta name="apple-mobile-web-app-capable" content="yes" />
       <meta name="apple-mobile-web-app-status-bar-style" content="default" />
