@@ -1,12 +1,7 @@
-<div align="center">
-  <a href="https://santoscorrea.com">
-    <img alt="Filipe Santos Correa - About Me" src="https://user-images.githubusercontent.com/3514796/55683989-79f20e00-5946-11e9-9893-6238244a8ab3.png" width="300" />
-  </a>
-</div>
+## 👨‍💻 About Me
 
-## 👨‍💻 About Me / Portfolio
-
-Welcome to my About Me / Portfolio repository!
+Hi, I am Hamed 👋
+It's just a dead-simple portfolio which it's highly inspired from [this](https://github.com/Safi1012/filipesantoscorrea.com) repo
 
 <br/>
 
@@ -14,7 +9,7 @@ Welcome to my About Me / Portfolio repository!
 
 - [Gatsby](https://www.gatsbyjs.org)
 - [React](https://reactjs.org)
-- [Firebase Hosting](https://firebase.google.com)
+- [Netlify](https://www.netlify.com/)
 
 <br/>
 
@@ -22,7 +17,7 @@ Welcome to my About Me / Portfolio repository!
 
 1. Clone repository: 
 ```sh
-git clone https://github.com/Safi1012/filipesantoscorrea.com
+git clone https://github.com/theham3d/hamed.es
 ```
 
 2. Install dependencies: 
