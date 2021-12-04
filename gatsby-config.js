@@ -4,15 +4,15 @@ module.exports = {
   },
   plugins: [
     {
-      resolve: `gatsby-plugin-prefetch-google-fonts`,
+      resolve: `gatsby-plugin-google-fonts-v2`,
       options: {
         fonts: [
           {
-            family: `Open Sans`,
-            variants: [`300`, `600`]
-          },
-        ],
-      },
+            family: 'Open Sans',
+            weights: ['300', '600']
+          }
+        ]
+      }
     },
     {
       resolve: "gatsby-plugin-react-svg",
@@ -20,7 +20,7 @@ module.exports = {
         rule: {
           include: /assets/
         }
-      }
+      }      
     },
     {
       resolve: `gatsby-plugin-manifest`,
