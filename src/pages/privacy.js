@@ -43,8 +43,8 @@ export default () => (
           <p>The party responsible for this website (the "controller") for purposes of data protection law is:</p>
           <p className={styles.center}>
             Filipe Santos Correa <br/>
-            76137 Karlsruhe <br/>
-            Germany <br/>
+            Burchardstr. 18a <br/>
+            20095 Hamburg <br/>
             <a href="mailto:mail@filipesantoscorrea.com">mail@filipesantoscorrea.com</a>
           </p>
         </section>
@@ -113,45 +113,12 @@ export default () => (
         </section>
 
         <section>
-          <h3>III. Information about the data processing</h3>
+          <h2>III. Information about the data processing</h2>
           <p>
             Your data processed when using our website will be deleted or blocked as soon as the purpose for its storage ceases
             to apply, provided the deletion of the same is not in breach of any statutory storage obligations or unless otherwise
             stipulated below.
           </p>
-
-
-          <h4>Google Analytics</h4>
-          <p>
-            We use Google Analytics on our website. This is a web analytics service provided by Google Inc., 1600 Amphitheatre 
-            Parkway, Mountain View, CA 94043 (hereinafter: Google). Through certification according to the EU-US Privacy Shield&nbsp;
-            <a href="https://www.privacyshield.gov/participant?id=a2zt000000001L5AAI&amp;status=Active" target="_blank" 
-              rel="noopener noreferrer">https://www.privacyshield.gov/participant?id=a2zt000000001L5AAI&amp;status=Active
-            </a>
-          </p>
-
-          <p>
-            Google guarantees that it will follow the EU's data protection regulations when processing data in the United States.
-            The Google Analytics service is used to analyze how our website is used. The legal basis is Art. 6 Para. 1 lit. f) GDPR. 
-            Our legitimate interest lies in the analysis, optimization, and economic operation of our site. Usage and user-related information, 
-            such as IP address, place, time, or frequency of your visits to our website will be transmitted to a Google server in the 
-            United States and stored there. However, we use Google Analytics with the so-called anonymization function, whereby Google 
-            truncates the IP address within the EU or the EEA before it is transmitted to the US. The data collected in this way is in 
-            turn used by Google to provide us with an evaluation of visits to our website and what visitors do once there. This data can 
-            also be used to provide other services related to the use of our website and of the internet in general. Google states 
-            that it will not connect your IP address to other data. In addition, Google provides further information with regard 
-            to its data protection practices at&nbsp;<a href="https://www.google.com/intl/de/policies/privacy/partners" target="_blank" 
-            rel="noopener noreferrer">https://www.google.com/intl/de/policies/privacy/partners,</a>&nbsp;
-            including options you can exercise to prevent such use of your data. 
-            In addition, Google offers an opt-out add-on at <a href="https://tools.google.com/dlpage/gaoptout?hl=de" 
-            target="_blank" rel="noopener noreferrer">https://tools.google.com/dlpage/gaoptout?hl=en</a>&nbsp;
-            in addition with further information. This add-on can be installed on the most popular browsers and offers you further control over the data that 
-            Google collects when you visit our website. The add-on informs Google Analytics' JavaScript (ga.js) that no information about the website 
-            visit should be transmitted to Google Analytics. However, this does not prevent information from being transmitted to us or to other 
-            web analytics services we may use as detailed herein. You can also opt out by clicking on the next link&nbsp;
-            <a href="/privacy" onClick={e => {e.preventDefault(); window.gaOptout(); console.log('Opt Out successfully');}}>Deactivate Google Analytics</a>.
-          </p>
-
 
           <h4>Google Fonts</h4>
           <p>

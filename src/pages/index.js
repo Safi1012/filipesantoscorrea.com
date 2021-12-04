@@ -16,7 +16,7 @@ export default () => (
 
       <title>Filipe Santos Correa - Front-End Engineer</title>
       <meta name="title" content="Filipe Santos Correa - Front-End Engineer" />
-      <meta name="description" content="Hi, my name is Filipe Santos Correa. I'm a Front-End Engineer from Karlsruhe - Germany." />
+      <meta name="description" content="Hi, my name is Filipe Santos Correa. I'm a Front-End Engineer from Hamburg - Germany." />
       <link rel="canonical" href="https://filipesantoscorrea.com" />
 
       <meta name="application-name" content="Filipe Santos Correa" />
