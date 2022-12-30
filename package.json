@@ -13,7 +13,7 @@
     "test": "echo \"Write tests! -> https://gatsby.dev/unit-testing\""
   },
   "dependencies": {
-    "gatsby": "^2.18.21",
+    "gatsby": "^2.32.13",
     "gatsby-plugin-google-fonts-v2": "^1.0.0",
     "gatsby-plugin-manifest": "^2.2.37",
     "gatsby-plugin-offline": "^3.0.31",
