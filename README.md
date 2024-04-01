@@ -1,5 +1,5 @@
 <div align="center">
-  <a href="https://santoscorrea.com">
+  <a href="https://filipesantoscorrea.com">
     <img alt="Filipe Santos Correa - About Me" src="https://user-images.githubusercontent.com/3514796/55683989-79f20e00-5946-11e9-9893-6238244a8ab3.png" width="300" />
   </a>
 </div>
@@ -7,7 +7,7 @@
 ## 👨‍💻 About Me / Portfolio
 
 Welcome to my About Me / Portfolio repository! \
-Check out the [live version](https://santoscorrea.com).
+Check out the [live version](https://filipesantoscorrea.com).
 
 <br/>
 
