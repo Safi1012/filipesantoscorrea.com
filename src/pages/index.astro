@@ -1,0 +1,41 @@
+---
+import About from "../components/About.astro";
+import Footer from "../components/Footer.astro";
+import Links from "../components/Links.astro";
+import Layout from "../layouts/Layout.astro";
+---
+
+<Layout>
+  <main>
+    <div class="outer">
+      <div class="inner">
+        <About />
+        <Links />
+      </div>
+    </div>
+    <Footer />
+  </main>
+</Layout>
+
+<style>
+  .particles {
+    height: 100vh;
+    position: absolute;
+    top: 0;
+    right: 0;
+    left: 0;
+  }
+
+  .outer {
+    display: flex;
+    height: 100vh;
+    align-items: center;
+    justify-content: center;
+  }
+
+  .inner {
+    margin: 0 0.5em;
+    z-index: 1;
+    padding-bottom: 6.5em;
+  }
+</style>
