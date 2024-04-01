@@ -6,7 +6,8 @@
 
 ## 👨‍💻 About Me / Portfolio
 
-Welcome to my About Me / Portfolio repository!
+Welcome to my About Me / Portfolio repository! \
+Check out the [live version](https://santoscorrea.com).
 
 <br/>
 
