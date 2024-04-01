@@ -1,0 +1,47 @@
+<nav class="container">
+  <ul class="list">
+    <li><a href="/privacy/">Privacy</a></li>
+    <li><span>|</span></li>
+    <li><a href="/legal/">Legal</a></li>
+  </ul>
+</nav>
+
+<style>
+  .container {
+    z-index: 1;
+  }
+
+  .list {
+    display: flex;
+    list-style: none;
+    justify-content: center;
+    width: 100%;
+    padding: 0;
+    margin: 0;
+  }
+
+  .list li {
+    padding: 1em 1.5em;
+  }
+
+  .list li span {
+    color: var(--text-color-light);
+  }
+
+  .list a {
+    color: var(--text-color);
+    text-decoration: none;
+  }
+
+  .list a:hover,
+  .list a:focus {
+    border-bottom: 1px solid var(--text-color);
+    margin-bottom: -1px;
+  }
+
+  @media (min-width: 766px) {
+    .list li {
+      padding: 1em 2em;
+    }
+  }
+</style>

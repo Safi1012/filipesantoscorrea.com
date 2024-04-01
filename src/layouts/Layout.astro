@@ -1,0 +1,42 @@
+---
+import "../styles/colors.css";
+import "../styles/fonts.css";
+---
+
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="title" content="Filipe Santos Correa - Front-End Engineer" />
+    <meta
+      name="description"
+      content="Hi, my name is Filipe Santos Correa. I'm a Front-End Engineer from Hamburg - Germany."
+    />
+    <meta name="application-name" content="Filipe Santos Correa" />
+    <meta name="theme-color" content="#48bfcd" />
+    <meta name="apple-mobile-web-app-title" content="Filipe Santos Correa" />
+    <meta name="apple-mobile-web-app-capable" content="yes" />
+    <meta name="apple-mobile-web-app-status-bar-style" content="default" />
+    <meta name="mobile-web-app-capable" content="yes" />
+    <meta name="robots" content="index, follow" />
+
+    <title>Filipe Santos Correa - Front-End Engineer</title>
+    <link rel="canonical" href="https://filipesantoscorrea.com" />
+    <link rel="manifest" href="manifest.json" />
+  </head>
+  <body>
+    <slot />
+  </body>
+</html>
+
+<style is:global>
+  * {
+    font-family: "Open Sans", sans-serif;
+  }
+
+  body {
+    margin: 0;
+  }
+</style>
