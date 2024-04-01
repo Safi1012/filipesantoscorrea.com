@@ -10,7 +10,6 @@
     "preview": "astro build && wrangler pages dev ./dist",
     "astro": "astro",
     "deploy": "astro build && wrangler pages deploy ./dist",
-    "build-cf-types": "wrangler types",
     "prettier": "prettier --write .",
     "prettier:check": "prettier --check ."
   },
