@@ -1,0 +1,32 @@
+name: Astro CI/CD
+
+on:
+  push:
+    branches:
+      - main
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v4
+
+      - name: Setup node w/ cache
+        uses: actions/setup-node@v4
+        with:
+          node-version: 20
+          cache: "npm"
+
+      - name: Install Dependencies
+        run: npm ci
+
+      - name: Prettier
+        run: yarn prettier:check
+
+      - name: Build
+        run: yarn build
+
+      # - name: Deploy
+      #   run: TODO
