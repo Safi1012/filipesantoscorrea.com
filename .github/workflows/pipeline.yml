@@ -28,8 +28,9 @@ jobs:
       - name: Build
         run: yarn build
 
-      - name: Build & Deploy Worker
+      - name: Deploy
         uses: cloudflare/wrangler-action@v3
         with:
           apiToken: ${{ secrets.CLOUDFLARE_API_TOKEN }}
           accountId: ${{ secrets.CLOUDFLARE_ACCOUNT_ID }}
+          command: yarn deploy
