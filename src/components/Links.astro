@@ -1,3 +1,11 @@
+---
+import { Image } from "astro:assets";
+import GitHub from "../assets/github.svg";
+import ShrinkMe from "../assets/shrink-me.svg";
+import LinkedIn from "../assets/linkedIn.svg";
+import Mail from "../assets/mail.svg";
+---
+
 <div class="links">
   <a
     href="https://github.com/Safi1012"
@@ -5,7 +13,7 @@
     target="_blank"
     aria-label="Link to my GitHub profile"
   >
-    <img src="src/assets/github.svg" alt="GitHub icon" />
+    <Image src={GitHub} alt="GitHub icon" />
   </a>
   <a
     href="https://shrinkme.app"
@@ -13,7 +21,7 @@
     target="_blank"
     aria-label="Link to my side project named Shrink Me"
   >
-    <img src="src/assets/shrink-me.svg" alt="Shrink Me icon" />
+    <Image src={ShrinkMe} alt="Shrink Me icon" />
   </a>
   <a
     href="https://www.linkedin.com/in/filipe-santoscorrea/"
@@ -21,14 +29,14 @@
     target="_blank"
     aria-label="Link to my LinkedIn profile"
   >
-    <img src="src/assets/linkedIn.svg" alt="LinkedIn icon" />
+    <Image src={LinkedIn} alt="LinkedIn icon" />
   </a>
   <a
     href="mailto:mail@filipesantoscorrea.com"
     rel="noopener noreferrer"
     aria-label="Link to my email address"
   >
-    <img src="src/assets/mail.svg" alt="Mail icon" />
+    <Image src={Mail} alt="Mail icon" />
   </a>
 </div>
 
