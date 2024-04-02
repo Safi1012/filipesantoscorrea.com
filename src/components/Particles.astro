@@ -1,0 +1,82 @@
+<script>
+  import { loadFull } from "tsparticles";
+  import { tsParticles } from "@tsparticles/engine";
+
+  await loadFull(tsParticles);
+
+  await tsParticles.load({
+    id: "tsparticles",
+    options: {
+      particles: {
+        number: {
+          value: 4,
+          density: {
+            enable: true,
+            height: 600,
+            width: 1200,
+          },
+        },
+        color: {
+          value: "#0873e8",
+        },
+        opacity: {
+          value: 0.5,
+          animation: {
+            enable: false,
+            speed: 1,
+            sync: false,
+          },
+        },
+        size: {
+          value: 3,
+          animation: {
+            enable: false,
+            speed: 30,
+            sync: false,
+          },
+        },
+        move: {
+          enable: true,
+          speed: 8,
+          direction: "none",
+          random: false,
+          straight: false,
+          outModes: "out",
+          attract: {
+            enable: false,
+            rotate: {
+              x: 600,
+              y: 1200,
+            },
+          },
+        },
+      },
+      interactivity: {
+        detect_on: "canvas",
+        events: {
+          onHover: {
+            enable: true,
+            mode: "repulse",
+          },
+          onClick: {
+            enable: true,
+            mode: "push",
+          },
+        },
+      },
+      retina_detect: true,
+    },
+  });
+</script>
+
+<div id="tsparticles"></div>
+
+<style>
+  #tsparticles {
+    height: 100vh;
+    position: absolute;
+    top: 0;
+    right: 0;
+    left: 0;
+  }
+</style>
