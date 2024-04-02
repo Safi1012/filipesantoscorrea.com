@@ -2,7 +2,7 @@
   import { loadFull } from "tsparticles";
   import { tsParticles } from "@tsparticles/engine";
 
-  document.addEventListener("DOMContentLoaded", async function (event) {
+  document.addEventListener("DOMContentLoaded", async () => {
     await loadFull(tsParticles);
 
     await tsParticles.load({
@@ -10,7 +10,7 @@
       options: {
         particles: {
           number: {
-            value: 4,
+            value: 6,
             density: {
               enable: true,
               height: 600,
