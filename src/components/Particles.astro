@@ -6,6 +6,7 @@
   import { loadCircleShape } from "@tsparticles/shape-circle";
   import { loadColorUpdater } from "@tsparticles/updater-color";
   import { loadOpacityUpdater } from "@tsparticles/updater-opacity";
+  import { loadOutModesUpdater } from "@tsparticles/updater-out-modes";
 
   document.addEventListener("DOMContentLoaded", async () => {
     await Promise.all([
@@ -13,9 +14,11 @@
       loadCircleShape(tsParticles, false),
       loadColorUpdater(tsParticles, false),
       loadOpacityUpdater(tsParticles, false),
+      loadOutModesUpdater(tsParticles, false),
       loadExternalRepulseInteraction(tsParticles, false),
       loadExternalPushInteraction(tsParticles, false),
     ]);
+
     await tsParticles.refresh(true);
     await tsParticles.load({
       id: "tsparticles",
