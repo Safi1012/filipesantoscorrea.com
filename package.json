@@ -10,20 +10,41 @@
     "preview": "astro build && wrangler pages dev ./dist",
     "astro": "astro",
     "deploy": "astro build && wrangler pages deploy ./dist",
+    "lint": "eslint .",
+    "lint:fix": "eslint . --fix",
     "prettier": "prettier --write .",
     "prettier:check": "prettier --check ."
   },
   "dependencies": {
-    "@astrojs/check": "^0.5.10",
-    "@astrojs/cloudflare": "^10.0.2",
-    "astro": "^4.5.9",
-    "tsparticles": "^3.3.0",
-    "typescript": "^5.4.3"
+    "@tsparticles/engine": "^4.4.0",
+    "@tsparticles/interaction-external-push": "^4.4.0",
+    "@tsparticles/interaction-external-repulse": "^4.4.0",
+    "@tsparticles/plugin-hex-color": "^4.4.0",
+    "@tsparticles/plugin-interactivity": "^4.4.0",
+    "@tsparticles/plugin-move": "^4.4.0",
+    "@tsparticles/shape-circle": "^4.4.0",
+    "@tsparticles/updater-opacity": "^4.4.0",
+    "@tsparticles/updater-out-modes": "^4.4.0",
+    "@tsparticles/updater-paint": "^4.4.0",
+    "@tsparticles/updater-size": "^4.4.0",
+    "astro": "^7.3.5"
   },
   "devDependencies": {
-    "@cloudflare/workers-types": "^4.20240329.0",
-    "prettier": "^3.2.5",
-    "prettier-plugin-astro": "^0.13.0",
-    "wrangler": "^3.41.0"
-  }
+    "@astrojs/check": "^0.9.10",
+    "@eslint/js": "^10.0.1",
+    "eslint": "^10.11.0",
+    "eslint-config-prettier": "^10.1.8",
+    "eslint-plugin-astro": "^3.2.1",
+    "eslint-plugin-jsx-a11y-x": "^0.2.0",
+    "globals": "^17.13.0",
+    "prettier": "^3.9.9",
+    "prettier-plugin-astro": "^1.1.0",
+    "typescript": "^6.0.3",
+    "typescript-eslint": "^8.71.0",
+    "wrangler": "^4.145.0"
+  },
+  "engines": {
+    "node": ">=24"
+  },
+  "packageManager": "pnpm@12.8.1+sha512.f64ba907507f5ceafe06c8d38e6052d0179444580ec1279ddd5bfc11cb48aa8a2644b66598e07e761da84872a9fc57d5f902b87fa49d024198d558612aabbe45"
 }

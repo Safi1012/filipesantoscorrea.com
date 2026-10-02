@@ -19,13 +19,21 @@ Check out the [live version](https://filipesantoscorrea.com).
 
 ## 🚀 Getting started
 
+Requires [Node.js](https://nodejs.org/) 24 (see `.nvmrc`). pnpm is provided through [corepack](https://github.com/nodejs/corepack), pinned via the `packageManager` field in `package.json`:
+
+```sh
+corepack enable
+```
+
 All commands are run from the root of the project, from a terminal:
 
-| Command                   | Action                                           |
-| :------------------------ | :----------------------------------------------- |
-| `npm install`             | Installs dependencies                            |
-| `npm run dev`             | Starts local dev server at `localhost:4321`      |
-| `npm run build`           | Build your production site to `./dist/`          |
-| `npm run preview`         | Preview your build locally, before deploying     |
-| `npm run astro ...`       | Run CLI commands like `astro add`, `astro check` |
-| `npm run astro -- --help` | Get help using the Astro CLI                     |
+| Command                | Action                                            |
+| :--------------------- | :------------------------------------------------ |
+| `pnpm install`         | Installs dependencies                             |
+| `pnpm dev`             | Starts local dev server at `localhost:4321`       |
+| `pnpm build`           | Type-checks and builds the site to `./dist/`      |
+| `pnpm preview`         | Builds and previews the site locally via Wrangler |
+| `pnpm lint`            | Lints all files with ESLint                       |
+| `pnpm prettier`        | Formats all files                                 |
+| `pnpm astro ...`       | Run CLI commands like `astro add`, `astro check`  |
+| `pnpm astro -- --help` | Get help using the Astro CLI                      |
