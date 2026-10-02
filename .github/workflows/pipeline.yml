@@ -49,6 +49,12 @@ jobs:
 
       - name: Build
         run: pnpm build
+        env:
+          LEGAL_NAME: ${{ vars.LEGAL_NAME }}
+          LEGAL_STREET: ${{ vars.LEGAL_STREET }}
+          LEGAL_POSTAL_CODE: ${{ vars.LEGAL_POSTAL_CODE }}
+          LEGAL_CITY: ${{ vars.LEGAL_CITY }}
+          LEGAL_EMAIL: ${{ vars.LEGAL_EMAIL }}
 
       - name: Upload build output
         uses: actions/upload-artifact@043fb46d1a93c77aae656e7c1c64a875d1fc6a0a # v7.0.1

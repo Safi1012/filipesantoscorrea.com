@@ -1,19 +1,29 @@
 ---
 import "../styles/colors.css";
 import "../styles/fonts.css";
+
+interface Props {
+  title?: string;
+  description?: string;
+  lang?: string;
+}
+
+const {
+  title = "Filipe Santos Correa - Front-End Engineer",
+  description = "Hi, my name is Filipe Santos Correa. I'm a Front-End Engineer from Hamburg - Germany.",
+  lang = "en",
+} = Astro.props;
+const canonicalURL = new URL(Astro.url.pathname, Astro.site);
 ---
 
 <!doctype html>
-<html lang="en">
+<html lang={lang}>
   <head>
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <meta name="title" content="Filipe Santos Correa - Front-End Engineer" />
-    <meta
-      name="description"
-      content="Hi, my name is Filipe Santos Correa. I'm a Front-End Engineer from Hamburg - Germany."
-    />
+    <meta name="title" content={title} />
+    <meta name="description" content={description} />
     <meta name="application-name" content="Filipe Santos Correa" />
     <meta name="theme-color" content="#48bfcd" />
     <meta name="apple-mobile-web-app-title" content="Filipe Santos Correa" />
@@ -22,9 +32,9 @@ import "../styles/fonts.css";
     <meta name="mobile-web-app-capable" content="yes" />
     <meta name="robots" content="index, follow" />
 
-    <title>Filipe Santos Correa - Front-End Engineer</title>
-    <link rel="canonical" href="https://filipesantoscorrea.com" />
-    <link rel="manifest" href="manifest.json" />
+    <title>{title}</title>
+    <link rel="canonical" href={canonicalURL} />
+    <link rel="manifest" href="/manifest.json" />
   </head>
   <body>
     <slot />

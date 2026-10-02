@@ -1,0 +1,101 @@
+---
+import Footer from "../components/Footer.astro";
+import Layout from "./Layout.astro";
+
+interface Props {
+  title: string;
+  description: string;
+}
+
+const { title, description } = Astro.props;
+---
+
+<Layout title={title} description={description} lang="de">
+  <div class="page">
+    <header class="header">
+      <a class="home" href="/">
+        Filipe Santos Correa
+      </a>
+      <nav aria-label="Sprache / Language">
+        <ul class="languages">
+          <li>
+            <a href="#de" hreflang="de" lang="de">
+              Deutsch
+            </a>
+          </li>
+          <li>
+            <a href="#en" hreflang="en" lang="en">
+              English
+            </a>
+          </li>
+        </ul>
+      </nav>
+    </header>
+
+    <main class="content">
+      <slot />
+    </main>
+
+    <Footer />
+  </div>
+</Layout>
+
+<style>
+  .page {
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+  }
+
+  .header,
+  .content {
+    box-sizing: border-box;
+    width: 100%;
+    max-width: 44rem;
+    margin: 0 auto;
+    padding: 0 1.25rem;
+  }
+
+  .header {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 0.75rem;
+    align-items: center;
+    justify-content: space-between;
+    padding-top: 2rem;
+  }
+
+  .home {
+    color: var(--primary-color);
+    font-size: 1.125rem;
+    font-weight: 300;
+    text-decoration: none;
+  }
+
+  .languages {
+    display: flex;
+    gap: 1.25rem;
+    margin: 0;
+    padding: 0;
+    list-style: none;
+    font-size: 0.875rem;
+  }
+
+  .languages a {
+    color: var(--text-color);
+    text-decoration: none;
+  }
+
+  .home:hover,
+  .home:focus-visible,
+  .languages a:hover,
+  .languages a:focus-visible {
+    text-decoration: underline;
+    text-underline-offset: 0.25em;
+  }
+
+  .content {
+    flex: 1;
+    padding-bottom: 4rem;
+  }
+</style>

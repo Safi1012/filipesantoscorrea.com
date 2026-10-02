@@ -1,5 +1,6 @@
 ---
 import { Image } from "astro:assets";
+import { LEGAL_EMAIL } from "astro:env/server";
 import GitHub from "../assets/github.svg";
 import ShrinkMe from "../assets/shrink-me.svg";
 import LinkedIn from "../assets/linkedIn.svg";
@@ -32,7 +33,7 @@ import Mail from "../assets/mail.svg";
     <Image src={LinkedIn} alt="LinkedIn icon" />
   </a>
   <a
-    href="mailto:mail@filipesantoscorrea.com"
+    href={`mailto:${LEGAL_EMAIL}`}
     rel="noopener noreferrer"
     aria-label="Link to my email address"
   >

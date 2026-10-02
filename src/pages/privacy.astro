@@ -1,179 +1,392 @@
 ---
-import Layout from "../layouts/Layout.astro";
-
+import {
+  LEGAL_CITY,
+  LEGAL_EMAIL,
+  LEGAL_NAME,
+  LEGAL_POSTAL_CODE,
+  LEGAL_STREET,
+} from "astro:env/server";
+import LegalPage from "../layouts/LegalPage.astro";
 import "../styles/page.css";
+
+const mailto = `mailto:${LEGAL_EMAIL}`;
 ---
 
-<Layout>
-  <main>
-    <div class="container">
-      <article id="english" lang="en" class="article">
-        <section>
-          <h1>Privacy Policy</h1>
-          <p>
-            Personal data (usually referred to just as "data" below) will only
-            be processed by us to the extent necessary and for the purpose of
-            providing a functional and user-friendly website, including its
-            contents, and the services offered there.
-          </p>
+<LegalPage
+  title="Datenschutzerklärung / Privacy Policy - Filipe Santos Correa"
+  description="Informationen zur Verarbeitung personenbezogener Daten gemäß Art. 13 DSGVO."
+>
+  <article class="legal" id="de" lang="de">
+    <h1>Datenschutzerklärung</h1>
+    <p class="meta">Stand: Oktober 2026</p>
 
-          <p>
-            Per Art. 4 No. 1 of Regulation (EU) 2016/679, i.e. the General Data
-            Protection Regulation (hereinafter referred to as the "GDPR"),
-            "processing" refers to any operation or set of operations such as
-            collection, recording, organization, structuring, storage,
-            adaptation, alteration, retrieval, consultation, use, disclosure by
-            transmission, dissemination, or otherwise making available,
-            alignment, or combination, restriction, erasure, or destruction
-            performed on personal data, whether by automated means or not.
-          </p>
+    <p>
+      Mit dieser Datenschutzerklärung informiere ich Sie gemäß Art. 13
+      Datenschutz-Grundverordnung (DSGVO) darüber, welche personenbezogenen
+      Daten beim Besuch dieser Website verarbeitet werden. Diese Website
+      verwendet keine Analyse-, Tracking- oder Werbedienste, setzt keine Cookies
+      zu solchen Zwecken und bindet keine Inhalte von Drittanbietern ein.
+    </p>
 
-          <p>
-            The following privacy policy is intended to inform you in particular
-            about the type, scope, purpose, duration, and legal basis for the
-            processing of such data either under our own control or in
-            conjunction with others. We also inform you below about the
-            third-party components we use to optimize our website and improve
-            the user experience which may result in said third parties also
-            processing data they collect and control.
-          </p>
+    <h2>1. Verantwortlicher</h2>
+    <address>
+      {LEGAL_NAME}
+      <br />
+      {LEGAL_STREET}
+      <br />
+      {`${LEGAL_POSTAL_CODE} ${LEGAL_CITY}`}
+      <br />
+      Deutschland
+      <br />
+      E-Mail: <a href={mailto}>{LEGAL_EMAIL}</a>
+    </address>
 
-          <p>Our privacy policy is structured as follows:</p>
+    <h2>2. Bereitstellung der Website über Cloudflare</h2>
+    <p>
+      Diese Website wird über den Dienst Cloudflare Pages der Cloudflare, Inc.,
+      101 Townsend St., San Francisco, CA 94107, USA („Cloudflare“)
+      bereitgestellt. Cloudflare liefert die Website über ein weltweites
+      Servernetz aus und schützt sie vor Angriffen.
+    </p>
+    <p>
+      Beim Aufruf der Website übermittelt Ihr Browser technisch bedingt folgende
+      Daten, die von Cloudflare verarbeitet werden: IP-Adresse, Datum und
+      Uhrzeit des Zugriffs, aufgerufene Seite, Referrer-URL, Browsertyp und
+      -version, Betriebssystem, übertragene Datenmenge sowie HTTP-Statuscode.
+    </p>
+    <p>
+      Die Verarbeitung erfolgt, um die Website auszuliefern sowie ihre
+      Stabilität und Sicherheit zu gewährleisten, insbesondere zur Abwehr von
+      Angriffen. Rechtsgrundlage ist Art. 6 Abs. 1 lit. f DSGVO; mein
+      berechtigtes Interesse liegt in einer sicheren und zuverlässigen
+      Bereitstellung der Website. In Einzelfällen, etwa bei Verdacht auf
+      automatisierte Zugriffe, kann Cloudflare zum Schutz der Website ein
+      technisch notwendiges Sicherheits-Cookie setzen oder eine Browserprüfung
+      durchführen. Rechtsgrundlage hierfür ist § 25 Abs. 2 Nr. 2 TDDDG in
+      Verbindung mit Art. 6 Abs. 1 lit. f DSGVO.
+    </p>
+    <p>
+      Cloudflare verarbeitet diese Daten als Auftragsverarbeiter auf Grundlage
+      eines Vertrags zur Auftragsverarbeitung gemäß Art. 28 DSGVO. Ich selbst
+      speichere keine Server-Logdateien. Cloudflare speichert die Daten nur so
+      lange, wie es für die genannten Zwecke erforderlich ist.
+    </p>
+    <p>
+      Dabei kann eine Übermittlung personenbezogener Daten in die USA erfolgen.
+      Cloudflare ist nach dem EU-U.S. Data Privacy Framework zertifiziert; die
+      Übermittlung erfolgt auf Grundlage des Angemessenheitsbeschlusses der
+      Europäischen Kommission vom 10. Juli 2023 (Art. 45 DSGVO). Ergänzend hat
+      Cloudflare die EU-Standardvertragsklauseln abgeschlossen (Art. 46 Abs. 2
+      lit. c DSGVO). Weitere Informationen finden Sie in der{" "}
+      <a
+        href="https://www.cloudflare.com/privacypolicy/"
+        target="_blank"
+        rel="noopener noreferrer"
+      >
+        Datenschutzerklärung von Cloudflare
+      </a>
+      .
+    </p>
 
-          <ol type="I">
-            <li>
-              <p>Information about us as controllers of your data</p>
-            </li>
-            <li>
-              <p>The rights of users and data subjects</p>
-            </li>
-            <li>
-              <p>Information about the data processing</p>
-            </li>
-          </ol>
+    <h2>3. Schriftarten und Animation</h2>
+    <p>
+      Die verwendete Schriftart wird direkt von dieser Website geladen; es
+      besteht keine Verbindung zu externen Schriftanbietern. Die
+      Hintergrundanimation wird ausschließlich lokal in Ihrem Browser berechnet,
+      ohne dass dabei Daten übermittelt oder auf Ihrem Endgerät gespeichert
+      werden.
+    </p>
 
-          <section>
-            <h2>I. Information about us as controllers of your data</h2>
-            <p>
-              The party responsible for this website (the "controller") for
-              purposes of data protection law is:
-            </p>
-            <p class="center">
-              Filipe Santos Correa <br />
-              Musterstr. 1 <br />
-              12345 Hamburg <br />
-              <a href="mailto:mail@filipesantoscorrea.com">
-                mail@filipesantoscorrea.com
-              </a>
-            </p>
-          </section>
+    <h2>4. Kontakt per E-Mail</h2>
+    <p>
+      Wenn Sie mir eine E-Mail senden, verarbeite ich Ihre E-Mail-Adresse, Ihren
+      Namen (sofern angegeben), den Inhalt Ihrer Nachricht sowie die zugehörigen
+      Metadaten, um Ihre Anfrage zu bearbeiten. Rechtsgrundlage ist Art. 6 Abs.
+      1 lit. b DSGVO, soweit Ihre Anfrage auf den Abschluss oder die
+      Durchführung eines Vertrags gerichtet ist, und im Übrigen Art. 6 Abs. 1
+      lit. f DSGVO; mein berechtigtes Interesse liegt in der Beantwortung Ihrer
+      Anfrage. Ich lösche Ihre Daten, sobald Ihre Anfrage abschließend
+      bearbeitet ist und keine gesetzlichen Aufbewahrungspflichten
+      entgegenstehen.
+    </p>
+    <p>
+      Mein E-Mail-Postfach wird von der Apple Distribution International Ltd.,
+      Hollyhill Industrial Estate, Hollyhill, Cork, Irland (iCloud Mail),
+      betrieben; E-Mails werden auf deren Servern gespeichert. Dabei kann eine
+      Übermittlung an die Apple Inc. in den USA erfolgen, die durch
+      EU-Standardvertragsklauseln abgesichert ist (Art. 46 Abs. 2 lit. c DSGVO).
+      Weitere Informationen finden Sie in der{" "}
+      <a
+        href="https://www.apple.com/de/legal/privacy/de-ww/"
+        target="_blank"
+        rel="noopener noreferrer"
+      >
+        Datenschutzrichtlinie von Apple
+      </a>
+      .
+    </p>
 
-          <section>
-            <h2>II. The rights of users and data subjects</h2>
-            <p>
-              With regard to the data processing to be described in more detail
-              below, users and data subjects have the right
-            </p>
-            <ul>
-              <li>
-                <p>
-                  to confirmation of whether data concerning them is being
-                  processed, information about the data being processed, further
-                  information about the nature of the data processing, and
-                  copies of the data (cf. also Art. 15 GDPR);
-                </p>
-              </li>
-            </ul>
+    <h2>5. Links zu anderen Websites</h2>
+    <p>
+      Diese Website enthält Links zu externen Angeboten (GitHub, LinkedIn und
+      Shrink Me). Dabei handelt es sich um einfache Links; beim Besuch dieser
+      Website werden keine Daten an diese Anbieter übermittelt. Erst wenn Sie
+      einen Link anklicken, verlassen Sie diese Website und es gelten die
+      Datenschutzbestimmungen des jeweiligen Anbieters.
+    </p>
 
-            <ul>
-              <li>
-                <p>
-                  to correct or complete incorrect or incomplete data (cf. also
-                  Art. 16 GDPR);
-                </p>
-              </li>
-            </ul>
+    <h2>6. Verschlüsselung</h2>
+    <p>
+      Diese Website wird ausschließlich über eine mit TLS verschlüsselte
+      Verbindung (HTTPS) ausgeliefert.
+    </p>
 
-            <ul>
-              <li>
-                <p>
-                  to the immediate deletion of data concerning them (cf. also
-                  Art. 17 DSGVO), or, alternatively, if further processing is
-                  necessary as stipulated in Art. 17 Para. 3 GDPR, to restrict
-                  said processing per Art. 18 GDPR;
-                </p>
-              </li>
-            </ul>
+    <h2>7. Ihre Rechte</h2>
+    <p>Sie haben gegenüber mir folgende Rechte:</p>
+    <ul>
+      <li>Auskunft über Ihre verarbeiteten Daten (Art. 15 DSGVO)</li>
+      <li>Berichtigung unrichtiger Daten (Art. 16 DSGVO)</li>
+      <li>Löschung Ihrer Daten (Art. 17 DSGVO)</li>
+      <li>Einschränkung der Verarbeitung (Art. 18 DSGVO)</li>
+      <li>Datenübertragbarkeit (Art. 20 DSGVO)</li>
+    </ul>
+    <p>
+      Zur Ausübung Ihrer Rechte genügt eine formlose Nachricht an{" "}
+      <a href={mailto}>{LEGAL_EMAIL}</a>.
+    </p>
 
-            <ul>
-              <li>
-                <p>
-                  to receive copies of the data concerning them and/or provided
-                  by them and to have the same transmitted to other
-                  providers/controllers (cf. also Art. 20 GDPR);
-                </p>
-              </li>
-            </ul>
-
-            <ul>
-              <li>
-                <p>
-                  to file complaints with the supervisory authority if they
-                  believe that data concerning them is being processed by the
-                  controller in breach of data protection provisions (see also
-                  Art. 77 GDPR).
-                </p>
-              </li>
-            </ul>
-
-            <p>
-              In addition, the controller is obliged to inform all recipients to
-              whom it discloses data of any such corrections, deletions, or
-              restrictions placed on processing the same per Art. 16, 17 Para.
-              1, 18 GDPR. However, this obligation does not apply if such
-              notification is impossible or involves a disproportionate effort.
-              Nevertheless, users have a right to information about these
-              recipients.
-            </p>
-            <p>
-              Likewise, under Art. 21 GDPR, users and data subjects have the
-              right to object to the controller's future processing of their
-              data pursuant to Art. 6 Para. 1 lit. f) GDPR. In particular, an
-              objection to data processing for the purpose of direct advertising
-              is permissible.
-            </p>
-          </section>
-
-          <section>
-            <h2>III. Information about the data processing</h2>
-            <p>
-              Your data processed when using our website will be deleted or
-              blocked as soon as the purpose for its storage ceases to apply,
-              provided the deletion of the same is not in breach of any
-              statutory storage obligations or unless otherwise stipulated
-              below.
-            </p>
-          </section>
-
-          <p class="final">
-            <a
-              href="https://www.ratgeberrecht.eu/leistungen/muster-datenschutzerklaerung.html"
-              target="_blank"
-              rel="noopener noreferrer"
-            >
-              Model Data Protection Statement
-            </a>{" "}
-            from&nbsp;
-            <a
-              href="https://www.ratgeberrecht.eu/"
-              target="_blank"
-              rel="noopener noreferrer"
-            >
-              Anwaltskanzlei Weiß &amp; Partner
-            </a>
-          </p>
-        </section>
-      </article>
+    <div class="highlight">
+      <h3>Widerspruchsrecht</h3>
+      <p>
+        Sie haben das Recht, aus Gründen, die sich aus Ihrer besonderen
+        Situation ergeben, jederzeit gegen die Verarbeitung Sie betreffender
+        personenbezogener Daten, die auf Grundlage von Art. 6 Abs. 1 lit. f
+        DSGVO erfolgt, Widerspruch einzulegen (Art. 21 DSGVO). Ich verarbeite
+        diese Daten dann nicht mehr, es sei denn, ich kann zwingende
+        schutzwürdige Gründe für die Verarbeitung nachweisen, die Ihre
+        Interessen, Rechte und Freiheiten überwiegen, oder die Verarbeitung
+        dient der Geltendmachung, Ausübung oder Verteidigung von
+        Rechtsansprüchen.
+      </p>
     </div>
-  </main>
-</Layout>
+
+    <h3>Beschwerderecht bei einer Aufsichtsbehörde</h3>
+    <p>
+      Sie haben das Recht, sich bei einer Datenschutz-Aufsichtsbehörde zu
+      beschweren (Art. 77 DSGVO), insbesondere in dem Mitgliedstaat Ihres
+      Aufenthaltsorts. Die für mich zuständige Aufsichtsbehörde ist:
+    </p>
+    <address>
+      Der Hamburgische Beauftragte für Datenschutz und Informationsfreiheit
+      <br />
+      Ludwig-Erhard-Str. 22
+      <br />
+      20459 Hamburg
+      <br />
+      <a
+        href="https://datenschutz-hamburg.de/"
+        target="_blank"
+        rel="noopener noreferrer"
+      >
+        datenschutz-hamburg.de
+      </a>
+    </address>
+
+    <h2>8. Weitere Hinweise</h2>
+    <p>
+      Sie sind weder gesetzlich noch vertraglich verpflichtet, personenbezogene
+      Daten bereitzustellen. Ohne die Verarbeitung der in Abschnitt 2 genannten
+      Verbindungsdaten kann die Website jedoch technisch nicht ausgeliefert
+      werden. Eine automatisierte Entscheidungsfindung einschließlich Profiling
+      (Art. 22 DSGVO) findet nicht statt.
+    </p>
+    <p>
+      Ich passe diese Datenschutzerklärung an, sobald sich die Verarbeitung oder
+      die Rechtslage ändert. Es gilt die jeweils hier veröffentlichte Fassung.
+    </p>
+  </article>
+
+  <article class="legal" id="en" lang="en">
+    <h1>Privacy Policy</h1>
+    <p class="meta">
+      Last updated: October 2026 · This translation is provided for convenience;
+      the German version above is authoritative.
+    </p>
+
+    <p>
+      This privacy policy informs you, in accordance with Art. 13 of the General
+      Data Protection Regulation (GDPR), about the personal data processed when
+      you visit this website. This website does not use any analytics, tracking
+      or advertising services, does not set cookies for such purposes and does
+      not embed any third-party content.
+    </p>
+
+    <h2>1. Controller</h2>
+    <address>
+      {LEGAL_NAME}
+      <br />
+      {LEGAL_STREET}
+      <br />
+      {`${LEGAL_POSTAL_CODE} ${LEGAL_CITY}`}
+      <br />
+      Germany
+      <br />
+      Email: <a href={mailto}>{LEGAL_EMAIL}</a>
+    </address>
+
+    <h2>2. Hosting via Cloudflare</h2>
+    <p>
+      This website is served via Cloudflare Pages, a service of Cloudflare,
+      Inc., 101 Townsend St., San Francisco, CA 94107, USA ("Cloudflare").
+      Cloudflare delivers the website through its global server network and
+      protects it against attacks.
+    </p>
+    <p>
+      When you visit the website, your browser necessarily transmits the
+      following data, which Cloudflare processes: IP address, date and time of
+      access, requested page, referrer URL, browser type and version, operating
+      system, amount of data transferred and HTTP status code.
+    </p>
+    <p>
+      This data is processed to deliver the website and to ensure its stability
+      and security, in particular to defend against attacks. The legal basis is
+      Art. 6(1)(f) GDPR; my legitimate interest is the secure and reliable
+      provision of the website. In individual cases, for example when automated
+      access is suspected, Cloudflare may set a strictly necessary security
+      cookie or perform a browser check to protect the website. The legal basis
+      for this is § 25(2) no. 2 TDDDG (German Telecommunications Digital
+      Services Data Protection Act) in conjunction with Art. 6(1)(f) GDPR.
+    </p>
+    <p>
+      Cloudflare processes this data as a processor under a data processing
+      agreement pursuant to Art. 28 GDPR. I do not store any server log files
+      myself. Cloudflare retains the data only as long as necessary for the
+      purposes stated above.
+    </p>
+    <p>
+      Personal data may be transferred to the USA in the process. Cloudflare is
+      certified under the EU-U.S. Data Privacy Framework; the transfer is based
+      on the European Commission's adequacy decision of 10 July 2023 (Art. 45
+      GDPR). In addition, Cloudflare has entered into the EU Standard
+      Contractual Clauses (Art. 46(2)(c) GDPR). For more information, see{" "}
+      <a
+        href="https://www.cloudflare.com/privacypolicy/"
+        target="_blank"
+        rel="noopener noreferrer"
+      >
+        Cloudflare's privacy policy
+      </a>
+      .
+    </p>
+
+    <h2>3. Fonts and animation</h2>
+    <p>
+      The font used is loaded directly from this website; there is no connection
+      to external font providers. The background animation is computed entirely
+      locally in your browser, without transmitting any data or storing anything
+      on your device.
+    </p>
+
+    <h2>4. Contact by email</h2>
+    <p>
+      If you send me an email, I process your email address, your name (if
+      provided), the content of your message and the associated metadata in
+      order to handle your request. The legal basis is Art. 6(1)(b) GDPR where
+      your request relates to entering into or performing a contract, and
+      otherwise Art. 6(1)(f) GDPR; my legitimate interest is responding to your
+      request. I delete your data once your request has been fully handled,
+      unless statutory retention obligations apply.
+    </p>
+    <p>
+      My mailbox is operated by Apple Distribution International Ltd., Hollyhill
+      Industrial Estate, Hollyhill, Cork, Ireland (iCloud Mail); emails are
+      stored on its servers. Data may be transferred to Apple Inc. in the USA,
+      safeguarded by the EU Standard Contractual Clauses (Art. 46(2)(c) GDPR).
+      For more information, see{" "}
+      <a
+        href="https://www.apple.com/legal/privacy/en-ww/"
+        target="_blank"
+        rel="noopener noreferrer"
+      >
+        Apple's privacy policy
+      </a>
+      .
+    </p>
+
+    <h2>5. Links to other websites</h2>
+    <p>
+      This website contains links to external services (GitHub, LinkedIn and
+      Shrink Me). These are plain links; no data is transmitted to these
+      providers when you visit this website. Only when you click a link do you
+      leave this website, and the privacy policy of the respective provider
+      applies.
+    </p>
+
+    <h2>6. Encryption</h2>
+    <p>
+      This website is served exclusively over a TLS-encrypted connection
+      (HTTPS).
+    </p>
+
+    <h2>7. Your rights</h2>
+    <p>You have the following rights with regard to your personal data:</p>
+    <ul>
+      <li>Access to your data (Art. 15 GDPR)</li>
+      <li>Rectification of inaccurate data (Art. 16 GDPR)</li>
+      <li>Erasure of your data (Art. 17 GDPR)</li>
+      <li>Restriction of processing (Art. 18 GDPR)</li>
+      <li>Data portability (Art. 20 GDPR)</li>
+    </ul>
+    <p>
+      To exercise your rights, simply send an informal message to{" "}
+      <a href={mailto}>{LEGAL_EMAIL}</a>.
+    </p>
+
+    <div class="highlight">
+      <h3>Right to object</h3>
+      <p>
+        You have the right to object at any time, on grounds relating to your
+        particular situation, to the processing of your personal data based on
+        Art. 6(1)(f) GDPR (Art. 21 GDPR). I will then no longer process this
+        data unless I can demonstrate compelling legitimate grounds for the
+        processing which override your interests, rights and freedoms, or the
+        processing serves the establishment, exercise or defence of legal
+        claims.
+      </p>
+    </div>
+
+    <h3>Right to lodge a complaint with a supervisory authority</h3>
+    <p>
+      You have the right to lodge a complaint with a data protection supervisory
+      authority (Art. 77 GDPR), in particular in the member state of your
+      habitual residence. The supervisory authority responsible for me is:
+    </p>
+    <address>
+      Der Hamburgische Beauftragte für Datenschutz und Informationsfreiheit
+      <br />
+      Ludwig-Erhard-Str. 22
+      <br />
+      20459 Hamburg, Germany
+      <br />
+      <a
+        href="https://datenschutz-hamburg.de/"
+        target="_blank"
+        rel="noopener noreferrer"
+      >
+        datenschutz-hamburg.de
+      </a>
+    </address>
+
+    <h2>8. Further information</h2>
+    <p>
+      You are not legally or contractually obliged to provide personal data.
+      However, without processing the connection data listed in section 2, the
+      website cannot be delivered. No automated decision-making, including
+      profiling (Art. 22 GDPR), takes place.
+    </p>
+    <p>
+      I will update this privacy policy whenever the processing or the legal
+      situation changes. The version published here applies.
+    </p>
+  </article>
+</LegalPage>
