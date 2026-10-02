@@ -23,7 +23,6 @@
     "@tsparticles/plugin-interactivity": "^4.4.0",
     "@tsparticles/plugin-move": "^4.4.0",
     "@tsparticles/shape-circle": "^4.4.0",
-    "@tsparticles/updater-opacity": "^4.4.0",
     "@tsparticles/updater-out-modes": "^4.4.0",
     "@tsparticles/updater-paint": "^4.4.0",
     "@tsparticles/updater-size": "^4.4.0",

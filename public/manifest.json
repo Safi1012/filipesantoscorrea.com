@@ -17,7 +17,7 @@
   ],
   "orientation": "portrait",
   "display": "standalone",
-  "dir": "left",
+  "dir": "ltr",
   "lang": "en-US",
   "name": "Filipe Santos Correa",
   "short_name": "Filipe Santos Correa",

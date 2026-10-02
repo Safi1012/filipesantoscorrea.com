@@ -6,7 +6,6 @@
   import { loadInteractivityPlugin } from "@tsparticles/plugin-interactivity";
   import { loadMovePlugin } from "@tsparticles/plugin-move";
   import { loadCircleShape } from "@tsparticles/shape-circle";
-  import { loadOpacityUpdater } from "@tsparticles/updater-opacity";
   import { loadOutModesUpdater } from "@tsparticles/updater-out-modes";
   import { loadPaintUpdater } from "@tsparticles/updater-paint";
   import { loadSizeUpdater } from "@tsparticles/updater-size";
@@ -18,7 +17,6 @@
       loadMovePlugin(tsParticles),
       loadCircleShape(tsParticles),
       loadPaintUpdater(tsParticles),
-      loadOpacityUpdater(tsParticles),
       loadSizeUpdater(tsParticles),
       loadOutModesUpdater(tsParticles),
       loadExternalRepulseInteraction(tsParticles),
@@ -40,17 +38,10 @@
           paint: {
             fill: {
               enable: true,
+              opacity: 0.5,
               color: {
                 value: "#0873e8",
               },
-            },
-          },
-          opacity: {
-            value: 0.5,
-            animation: {
-              enable: false,
-              speed: 1,
-              sync: false,
             },
           },
           size: {

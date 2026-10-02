@@ -187,9 +187,6 @@ importers:
       '@tsparticles/shape-circle':
         specifier: ^4.4.0
         version: 4.4.0(@tsparticles/engine@4.4.0)
-      '@tsparticles/updater-opacity':
-        specifier: ^4.4.0
-        version: 4.4.0(@tsparticles/engine@4.4.0)
       '@tsparticles/updater-out-modes':
         specifier: ^4.4.0
         version: 4.4.0(@tsparticles/engine@4.4.0)
@@ -1509,11 +1506,6 @@ packages:
 
   '@tsparticles/shape-circle@4.4.0':
     resolution: {integrity: sha512-pCdCenLohHwaeeuMCw9bh1icGB+CKwBYx67L5dTBw6aig7LRvL+Kd1PKClJTgXkx8Mb1Xb7KLNmSYgh/ABRtEQ==}
-    peerDependencies:
-      '@tsparticles/engine': 4.4.0
-
-  '@tsparticles/updater-opacity@4.4.0':
-    resolution: {integrity: sha512-StQAExNqeOHANRAMXHdaKKEBD1DrRwBZ3TQF6DPtERtoElj8BvMlPHq38W0TSzfvR0lFP91p2Pzo5txVzVJ3Gg==}
     peerDependencies:
       '@tsparticles/engine': 4.4.0
 
@@ -3955,11 +3947,6 @@ snapshots:
 
   '@tsparticles/shape-circle@4.4.0(@tsparticles/engine@4.4.0)':
     dependencies:
-      '@tsparticles/engine': 4.4.0
-
-  '@tsparticles/updater-opacity@4.4.0(@tsparticles/engine@4.4.0)':
-    dependencies:
-      '@tsparticles/animation-utils': 4.4.0(@tsparticles/engine@4.4.0)
       '@tsparticles/engine': 4.4.0
 
   '@tsparticles/updater-out-modes@4.4.0(@tsparticles/engine@4.4.0)':
